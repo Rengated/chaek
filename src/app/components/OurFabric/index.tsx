@@ -4,7 +4,7 @@ import styles from "./ourfabric.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Pagination } from "swiper/modules";
-import picture from "../../assets/swiper-photo.png";
+import picture from "../../../../public/static/assets/swiper-photo.png";
 
 const OurFabric: React.FC = () => {
   var settings = {

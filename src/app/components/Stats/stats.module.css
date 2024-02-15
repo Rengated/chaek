@@ -106,7 +106,7 @@
     max-width: 465px;
     padding: 56px 24px;
     padding-top: 12px;
-    background-image: url('../../assets/stats-collab.png');
+    background-image: url('../../../../public/static/assets/stats-collab.png');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 32px;

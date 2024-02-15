@@ -106,23 +106,23 @@
 
 
 .collabs_item:nth-child(1)::after{
-    background-image: url('../../assets/collab-circle.png');
+    background-image: url('../../../../public/static/assets/collab-circle.png');
 }
 
 .collabs_item:nth-child(2)::after{
-    background-image: url('../../assets/collab-head.png');
+    background-image: url('../../../../public/static/assets/collab-head.png');
 }
 
 .collabs_item:nth-child(3)::after{
-    background-image: url('../../assets/collab-wood.png');
+    background-image: url('../../../../public/static/assets/collab-wood.png');
 }
 
 .collabs_item:nth-child(4)::after{
-    background-image: url('../../assets/collab-circle.png');
+    background-image: url('../../../../public/static/assets/collab-circle.png');
 }
 
 .collabs_item:nth-child(5)::after{
-    background-image: url('../../assets/collab-head.png');
+    background-image: url('../../../../public/static/assets/collab-head.png');
 }
 
 /* Hover */
@@ -131,7 +131,7 @@
 }
 
 .collabs_item:nth-child(2):hover::after, .collabs_item:nth-child(3):hover::after, .collabs_item:nth-child(5):hover::after{
-    background-image: url('../../assets/collab-circle.png');
+    background-image: url('../../../../public/static/assets/collab-circle.png');
 }
 
 .collabs_want{

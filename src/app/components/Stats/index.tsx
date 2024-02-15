@@ -1,9 +1,9 @@
 import styles from "./stats.module.css";
-import bush from "../../assets/icons/bush.svg";
-import cart from "../../assets/icons/cart.svg";
-import house from "../../assets/icons/house.svg";
-import lightning from "../../assets/icons/lightning.svg";
-import collab from "../../assets/about-collab.png";
+import bush from "../../../../public/static/assets/icons/bush.svg";
+import cart from "../../../../public/static/assets/icons/cart.svg";
+import house from "../../../../public/static/assets/icons/house.svg";
+import lightning from "../../../../public/static/assets/icons/lightning.svg";
+import collab from "../../../../public/static/assets/about-collab.png";
 import Image from "next/image";
 
 const Stats: React.FC = () => {

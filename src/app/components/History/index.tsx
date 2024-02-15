@@ -1,6 +1,6 @@
 "use client";
 import styles from "./history.module.css";
-import example from "../../assets/history-content.png";
+import example from "../../../../public/static/assets/history-content.png";
 import Image from "next/image";
 import { useState } from "react";
 import { Store } from "@/store";

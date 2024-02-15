@@ -1,6 +1,6 @@
 import Image from "next/image";
-import picture from "../../assets/collab.png";
-import plusIcon from "../../assets/plus-icon.svg";
+import picture from "../../../../public/static/assets/collab.png";
+import plusIcon from "../../../../public/static/assets/plus-icon.svg";
 import styles from "./collaboration.module.css";
 
 const Collaboration: React.FC = () => {

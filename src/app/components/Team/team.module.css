@@ -114,6 +114,6 @@
     content: '';
     width: 54px;
     height: 64px;
-    background-image: url('../../assets/cat.png');
+    background-image: url('../../../../public/static/assets/cat.png');
     background-size: contain;
 }

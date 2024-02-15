@@ -2,10 +2,10 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef, useCallback } from "react";
-import arrowLeft from "../../assets/icons/arrow-left.svg";
-import arrowRight from "../../assets/icons/arrow-right.svg";
+import arrowLeft from "../../../../public/static/assets/icons/arrow-left.svg";
+import arrowRight from "../../../../public/static/assets/icons/arrow-right.svg";
 import Image from "next/image";
-import member from "../../assets/Card.png";
+import member from "../../../../public/static/assets/Card.png";
 import styles from "./team.module.css";
 
 const Team: React.FC = () => {

@@ -100,7 +100,7 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
-    background-image: url('../../assets/framer1.png');
+    background-image: url('../../../../public/static/assets/framer1.png');
 
 }
 .grid div:nth-child(2){
@@ -109,7 +109,7 @@
     grid-row-start: 1;
     grid-row-end: 1;
     color: black;
-    background-image: url('../../assets/map.png');
+    background-image: url('../../../../public/static/assets/map.png');
 
 }
 .grid div:nth-child(3){
@@ -118,7 +118,7 @@
     grid-row-start: 1;
     grid-row-end: 1;
     color: black;
-    background-image: url('../../assets/wood.png');
+    background-image: url('../../../../public/static/assets/wood.png');
 
 
 }
@@ -127,7 +127,7 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
-    background-image: url('../../assets/framer2.png');
+    background-image: url('../../../../public/static/assets/framer2.png');
 
 }
 .grid div:nth-child(5){
@@ -146,7 +146,7 @@
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 2;
-    background-image: url('../../assets/framer3.png');
+    background-image: url('../../../../public/static/assets/framer3.png');
 
 }
 .grid div:nth-child(7){
@@ -154,7 +154,7 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 3;
-    background-image: url('../../assets/framer4.png');
+    background-image: url('../../../../public/static/assets/framer4.png');
 
 
 }
@@ -164,7 +164,7 @@
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 3;
-    background-image: url('../../assets/framer4.png');
+    background-image: url('../../../../public/static/assets/framer4.png');
 
 }
 .grid div:nth-child(9){
@@ -172,7 +172,7 @@
     grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 3;
-    background-image: url('../../assets/framer5.png');
+    background-image: url('../../../../public/static/assets/framer5.png');
 
 
 }

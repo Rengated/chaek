@@ -47,13 +47,13 @@ table {
 .swiper-button-prev {
 	width: 48px !important;
 	height: 48px !important;
-	background-image: url('../app/assets/icons/swiper-prev.svg') !important;
+	background-image: url('../../public/static/assets/icons/swiper-prev.svg')  !important;
 }
   
 .swiper-button-next {
 	width: 48px !important;
 	height: 48px !important;
-	background-image: url('../app/assets/icons/swiper-next.svg') !important;
+	background-image: url('../../public/static/assets/icons/swiper-next.svg') !important;
 }
 
 .swiper-button-next::after, 

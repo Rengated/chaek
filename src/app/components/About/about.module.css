@@ -5,7 +5,7 @@
   align-items: center;
   padding: 206px 0px;
   text-align: center;
-  background-image: url("../../assets/about-bg.png");background-position: center;
+  background-image: url("../../../../public/static/assets/about-bg.png");background-position: center;
 }
 
 .title {

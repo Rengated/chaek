@@ -1,9 +1,9 @@
 import styles from "./wherebuy.module.css";
-import azbuka from "../../assets/logos/azbuka.svg";
-import ozon from "../../assets/logos/ozon.svg";
-import wb from "../../assets/logos/wb.svg";
-import ym from "../../assets/logos/ym.svg";
-import chaek from "../../assets/logos/chaek.svg";
+import azbuka from "../../../../public/static/assets/logos/azbuka.svg";
+import ozon from "../../../../public/static/assets/logos/ozon.svg";
+import wb from "../../../../public/static/assets/logos/wb.svg";
+import ym from "../../../../public/static/assets/logos/ym.svg";
+import chaek from "../../../../public/static/assets/logos/chaek.svg";
 import Image from "next/image";
 
 const WhereBuy: React.FC = () => {
