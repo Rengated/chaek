@@ -1,0 +1,152 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 56px;
+    padding-top: 280px;
+    padding-bottom: 56px;
+    background: #022422;
+    position: relative;
+    row-gap: 48px;
+    
+ 
+
+}
+
+.content{
+    z-index: 2;
+    display: flex;
+    margin: 0 auto;
+    column-gap: 24px;
+    color: white;
+ 
+}
+
+.title{
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1458px;
+    margin: 0 auto;
+    font-size: 340px;
+    font-weight: 700;
+    line-height: 340px;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.16;
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.08) 86.47%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.textbox{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 626px;
+    max-width: 626px;
+    padding: 32px;
+    border-radius: 32px;
+    background: #131414;
+
+}
+
+.year{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px; 
+    margin-bottom: 16px;
+}
+
+.heading{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    max-width: 145px;
+    margin-bottom: 24px;
+
+}
+
+.description{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px; 
+
+
+ 
+}
+
+.metrics{
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+}
+
+.metrics_item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+    border-right: 1px solid #353636;
+    
+}
+
+.metrics_item:last-child{
+    border-right: none;
+}
+
+
+
+.number{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;  
+    margin-bottom: 8px;
+}
+
+
+.caption{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px; 
+}
+
+.tiles{
+    margin: 0 auto;
+    display: flex;
+    column-gap: 16px;
+}
+
+.button{
+    border: 1px solid transparent;
+    display: flex;
+    color: white;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background: #131414;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;  
+    cursor: pointer;
+}
+
+.button:hover{
+    border: 1px solid #805399;
+    transition: 0.3s ;
+}
+
+.button_active{
+    border: transparent;
+    background: linear-gradient(84deg, #543465 0%, #805399 100%)
+    
+}
+
+.button_active:hover{
+    border: transparent;
+}

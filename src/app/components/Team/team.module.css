@@ -1,0 +1,119 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 196px 0px 56px 0px;
+    background: #321c3d;
+    border-radius: 56px;
+    overflow-x: hidden;
+    position: relative;
+
+
+}
+
+.title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1521px;
+    margin: 0 auto;
+    font-size: 340px;
+    font-weight: 700;
+    line-height: 340px; 
+    opacity: 0.16;
+    background: linear-gradient(180deg, #FFF 0.33%, rgba(229, 231, 235, 0.00) 99.67%, rgba(255, 255, 255, 0.08) 99.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.subtitle{
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;  
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.description{
+    max-width: 600px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    line-height: 32px; 
+    margin-bottom: 56px;
+}
+
+
+.team{
+    display: flex;
+    overflow-x: hidden;
+    max-width: 1720px;
+    padding-left: 32px;
+    margin-bottom: 48px;
+}
+
+.arrows{
+    display: flex;
+    position: absolute;
+    top: 334px;
+    right: 225px;
+    column-gap: 8px;
+    
+}
+
+.button{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    border-radius: 32px;
+    background: #543465;
+    border: none;
+    transition: 0.3s all;
+}
+
+.button:hover{
+    border-radius: 32px;
+    background: #805399;
+}
+
+.join_button{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px; 
+    border-radius: 16px;
+    background:  linear-gradient(84deg, #543465 0%, #805399 100%);
+    padding: 18px 22.5px;
+    opacity: 1;
+    border: none;
+    transition: 0.3s;
+    position: relative;
+
+}
+.join_button:hover{
+    transition: 0.3s all;
+    opacity: 0.7;
+}
+
+
+.join_button:hover::after{
+    z-index: -1;
+    position: absolute;
+    left: 35%;
+    top: -55px;
+    content: '';
+    width: 54px;
+    height: 64px;
+    background-image: url('../../assets/cat.png');
+    background-size: contain;
+}

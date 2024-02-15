@@ -1,0 +1,151 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+
+    row-gap: 56px;
+}
+
+
+
+.content{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 24px;
+
+}
+ 
+
+.text{
+    flex-basis: 628px;
+    max-width: 628px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    row-gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 32px;
+}
+
+
+.block_name{
+    color: #374151;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px; 
+}
+
+
+
+.title{
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;  
+    max-width: 350px;
+}
+
+.description{
+    max-width: 555px;
+    color: var(--Grey-006, #6B7280);
+    font-size: 18px;
+    line-height: 28px; 
+}
+
+
+.button{
+    padding: 0px;
+    align-self: flex-start;
+    color: #65A30D;
+    font-size: 18px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 28px;
+}
+
+
+.collabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.collabs_item{
+    position: relative;
+    overflow: hidden;
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+}
+
+.collabs_item:nth-child(1){
+    border: 4px solid #543465;
+}
+
+
+
+.collabs_item::after{
+    z-index: -1;
+    content: '';
+    top: -5px;
+    left: 0;
+    width: 192px;
+    height: 192px;
+    position: absolute;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+
+
+.collabs_item:nth-child(1)::after{
+    background-image: url('../../assets/collab-circle.png');
+}
+
+.collabs_item:nth-child(2)::after{
+    background-image: url('../../assets/collab-head.png');
+}
+
+.collabs_item:nth-child(3)::after{
+    background-image: url('../../assets/collab-wood.png');
+}
+
+.collabs_item:nth-child(4)::after{
+    background-image: url('../../assets/collab-circle.png');
+}
+
+.collabs_item:nth-child(5)::after{
+    background-image: url('../../assets/collab-head.png');
+}
+
+/* Hover */
+.collabs_item:nth-child(1):hover::after, .collabs_item:nth-child(4):hover::after{
+    transform: scale(1.2);
+}
+
+.collabs_item:nth-child(2):hover::after, .collabs_item:nth-child(3):hover::after, .collabs_item:nth-child(5):hover::after{
+    background-image: url('../../assets/collab-circle.png');
+}
+
+.collabs_want{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 192px;
+    height: 192px;
+    align-items: center;
+    justify-content: center;
+    background: #EAECE6;
+    border-radius: 50%;
+    color:#65A30D;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px; 
+}

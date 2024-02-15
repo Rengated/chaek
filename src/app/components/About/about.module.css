@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 206px 0px;
+  text-align: center;
+  background-image: url("../../assets/about-bg.png");background-position: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  max-width: 960px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.subtitle {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  line-height: 48px;
+}

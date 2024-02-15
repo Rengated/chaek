@@ -1,0 +1,137 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 1280px;
+    width: 100%;
+
+}
+
+.bar{
+    display: flex;
+    width: 100%;
+    padding: 56px 22px;
+    border-radius: 32px;
+    column-gap: 24px;
+    background: var(--Green-000, #EAECE6);
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 396%;
+    max-width: 396px;
+
+
+}
+
+.card_icon{
+    margin-bottom: 24px;
+
+}
+
+.card_title{
+    column-gap: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px; 
+    margin-bottom: 8px;
+    color: black;
+
+}
+.card_title span{
+   font-size: 32px;
+
+}
+
+.card_description{
+    color: #374151;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px; 
+
+}
+
+.additional{
+    display: flex;
+    column-gap: 24px;
+}
+
+.delivery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 792px;
+    flex-basis: 792px;
+    
+}
+
+
+.delivery_title{
+    color: black;
+    font-size: 40px; 
+    font-weight: 600;
+    line-height: 48px;
+    max-width: 400px;  
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+.delivery_subtitle{
+    color:  #374151;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;  
+}
+
+.collaboration{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 465px;
+    max-width: 465px;
+    padding: 56px 24px;
+    padding-top: 12px;
+    background-image: url('../../assets/stats-collab.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 32px;
+ 
+  
+   
+}
+
+.collaboration_title{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    transform: translateY(-11px);
+ 
+
+}
+
+.collaboration_subtitle{
+    color: #E5E7EB;
+    max-width: 382px;
+    text-align: center; 
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px; 
+    margin-top: -2px;
+   
+}
