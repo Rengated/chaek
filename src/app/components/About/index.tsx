@@ -1,4 +1,5 @@
 import styles from "./about.module.css";
+import bg from "../../../../public/videos/bg.mp4";
 
 const About: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const About: React.FC = () => {
         loop
         muted>
         <source
-          src={require("../../../../public/videos/bg.mp4")}
+          src={bg as unknown as string}
           type="video/mp4"
         />
       </video>
