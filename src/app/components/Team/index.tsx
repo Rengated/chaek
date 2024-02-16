@@ -48,6 +48,7 @@ const Team: React.FC = () => {
           />
         </button>
       </div>
+
       <div className={styles.team}>
         <Swiper
           ref={sliderRef}

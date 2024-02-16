@@ -6,8 +6,10 @@
     padding-top: 280px;
     padding-bottom: 56px;
     background: #022422;
+    overflow: hidden;
     position: relative;
     row-gap: 48px;
+
     
  
 
@@ -27,6 +29,7 @@
     left: 0;
     right: 0;
     max-width: 1458px;
+
     margin: 0 auto;
     font-size: 340px;
     font-weight: 700;
