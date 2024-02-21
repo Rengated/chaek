@@ -48,6 +48,10 @@
     font-weight: 600;
     padding: 0px;
     line-height: 28px;
+}
+
+.button:hover{
+    color: #4D7C0F;
 
 }
 

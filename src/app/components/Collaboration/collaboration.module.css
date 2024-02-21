@@ -69,6 +69,10 @@
     line-height: 28px;
 }
 
+.button:hover{
+    color: #4D7C0F;
+}
+
 
 .collabs{
     display: flex;

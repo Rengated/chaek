@@ -3,7 +3,10 @@ import bush from "../../../../public/static/assets/icons/bush.svg";
 import cart from "../../../../public/static/assets/icons/cart.svg";
 import house from "../../../../public/static/assets/icons/house.svg";
 import lightning from "../../../../public/static/assets/icons/lightning.svg";
-import collab from "../../../../public/static/assets/about-collab.png";
+import spot from "../../../../public/static/assets/spot.svg";
+import smile from "../../../../public/static/assets/smile.svg";
+import personLeft from "../../../../public/static/assets/person-left.png";
+import personRight from "../../../../public/static/assets/person-right.png";
 import Image from "next/image";
 
 const Stats: React.FC = () => {
@@ -70,11 +73,29 @@ const Stats: React.FC = () => {
             </p>
           </div>
           <div className={styles.collaboration}>
-            <Image
-              src={collab}
-              alt="picture"
-            />
             <p className={styles.collaboration_title}>Коллабы</p>
+            <Image
+              src={personLeft}
+              objectFit="contain"
+              alt=""
+              className={styles.collab_picture}
+            />
+            <Image
+              src={smile}
+              alt=""
+              className={styles.collab_picture}
+            />
+            <Image
+              src={personRight}
+              alt=""
+              className={styles.collab_picture}
+            />
+            <Image
+              src={spot}
+              alt=""
+              className={styles.collab_picture}
+            />
+
             <p className={styles.collaboration_subtitle}>
               С художником, гонщиком и основателем Щита. Чай объединяет!
             </p>

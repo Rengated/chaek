@@ -13,7 +13,7 @@ const Team: React.FC = () => {
 
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return;
-    (sliderRef.current as any).slidePrev();
+    (sliderRef.current as any).swiper.slidePrev();
   }, []);
 
   const handleNext = useCallback(() => {
