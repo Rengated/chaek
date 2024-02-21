@@ -16,7 +16,8 @@
     "react-dom": "^18",
     "sass": "^1.70.0",
     "scss": "^0.2.4",
-    "swiper": "^11.0.6"
+    "swiper": "^11.0.6",
+    "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^20",

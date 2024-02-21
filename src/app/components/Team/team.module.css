@@ -117,3 +117,48 @@
     background-image: url('../../../../public/static/assets/cat.png');
     background-size: contain;
 }
+
+.slide{
+    display: flex;
+    flex-basis: 384px;
+    max-width: 384px;
+    height: 580px;
+    padding: 32px;
+
+}
+
+.name{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+.position{
+    color: white;
+    font-size: 16px;
+    line-height: 32px;
+    
+}
+.position_desc{
+    color: white;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: auto;
+    padding: 8px 16px;
+    max-height: 70px;
+    overflow: hidden;
+    background: rgba(255,255,255, 0.2);
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.slide:hover > .text{
+    transition: 0.3s;
+    max-height: 150px;
+}

@@ -28,6 +28,10 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <script
+          async
+          type="text/javascript"
+          src="vanilla-tilt.js"></script>
       </body>
     </Html>
   );

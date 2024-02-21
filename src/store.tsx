@@ -1,3 +1,5 @@
+import member from "../public/static/assets/member.png";
+
 export const Store = {
   history: [
     {
@@ -41,6 +43,45 @@ export const Store = {
       title: "Название события",
       description:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con",
+    },
+  ],
+
+  team: [
+    {
+      name: "Имя",
+      position: "Должность",
+      description: "Описание к должности для участника команды",
+      image: member.src,
+    },
+    {
+      name: "Стас",
+      position: "Должность",
+      description: "Описание к должности для участника команды",
+      image: member.src,
+    },
+    {
+      name: "Макс",
+      position: "Должность",
+      description: "Описание к должности для участника команды",
+      image: member.src,
+    },
+    {
+      name: "Cергей",
+      position: "Должность",
+      description: "Описание к должности для участника команды",
+      image: member.src,
+    },
+    {
+      name: "Владимир",
+      position: "Должность",
+      description: "Описание к должности для участника команды",
+      image: member.src,
+    },
+    {
+      name: "Никита",
+      position: "Должность",
+      description: "Описание к должности для участника команды",
+      image: member.src,
     },
   ],
 };
