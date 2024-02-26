@@ -9,7 +9,6 @@ import member from "../../../../public/static/assets/Card.png";
 import styles from "./team.module.css";
 import VanillaTilt from "vanilla-tilt";
 import { Store } from "@/store";
-import { url } from "inspector";
 
 const Team: React.FC = () => {
   const sliderRef = useRef(null);
@@ -69,9 +68,11 @@ const Team: React.FC = () => {
             releaseOnEdges: true,
           }}>
           {team.map((person, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide
+              key={index}
+              className={styles.slide}>
               <div
-                className={`tilt-element ${styles.slide}`}
+                className={`tilt-element ${styles.slide_content}`}
                 style={{ backgroundImage: `url(${person.image})` }}
                 data-tilt-reverse="true">
                 <div className={styles.text}>

@@ -28,10 +28,10 @@
     top: 0;
     left: 0;
     right: 0;
-    max-width: 1458px;
-
+    max-width: max-content;
+    align-self: center;
     margin: 0 auto;
-    font-size: 340px;
+    font-size: clamp(72px, 20vw, 340px);
     font-weight: 700;
     line-height: 340px;
     z-index: 1;
@@ -119,6 +119,7 @@
 
 .tiles{
     margin: 0 auto;
+    padding: 0px 16px;
     display: flex;
     column-gap: 16px;
 }
@@ -152,4 +153,78 @@
 
 .button_active:hover{
     border: transparent;
+}
+
+
+@media screen and (max-width:600px) {
+    .wrapper{
+        padding-top: 80px;
+        row-gap: 28px;
+        padding-bottom: 48px;
+        border-radius: 32px;
+    }
+    .content{
+        flex-direction: column;
+        padding: 0px 16px;
+        row-gap: 8px
+
+    }
+    .content img{
+        width: 100%;
+        height: unset;
+        border-radius: 16px;
+        aspect-ratio: 16/10 !important;
+    }
+
+    .textbox{
+        padding: 24px;
+        border-radius: 16px;
+        flex-basis: unset;
+    }
+
+    .title{
+        top: 16px;
+        line-height: 72px;
+
+    }
+
+    .year{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    .heading{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    .description{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 24px;
+    }
+
+    .number{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .caption{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .tiles{
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none; 
+        overflow-x: scroll;
+        width: 100%;
+
+    }
+    .tiles::-webkit-scrollbar {
+        display: none
+    }
+
 }

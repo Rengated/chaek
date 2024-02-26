@@ -7,6 +7,7 @@ const About: React.FC = () => {
       <video
         autoPlay
         loop
+        playsInline
         muted>
         <source
           src={bg as unknown as string}

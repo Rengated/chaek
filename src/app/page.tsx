@@ -15,7 +15,7 @@ export default function Home() {
       <OurFabric />
       <Team />
       <Collaboration />
-      <WhereBuy />
+      {/* <WhereBuy /> */}
     </main>
   );
 }

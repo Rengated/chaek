@@ -2,7 +2,7 @@
 import styles from "./history.module.css";
 import example from "../../../../public/static/assets/history-content.png";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Store } from "@/store";
 
 const History: React.FC = () => {
