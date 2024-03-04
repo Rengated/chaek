@@ -186,6 +186,10 @@
     .wrapper{
         padding: 24px 16px ;
     }
+
+    .stats{
+        gap: 8px;
+    }
     .bar{
         padding: 32px 16px;
         flex-direction: column;
