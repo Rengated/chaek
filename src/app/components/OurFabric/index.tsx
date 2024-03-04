@@ -81,7 +81,7 @@ const OurFabric: React.FC = () => {
           <span>Описание</span>
         </div>
         <div className="">
-          <p>Мастер Ло</p>
+          <p>Мастер</p>
           <span></span>
         </div>
         <div className="">

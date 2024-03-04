@@ -41,10 +41,18 @@
 .partners{
     margin-top: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding:  0 24.5px;
 
+
+}
+
+.partners div{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
 }
 
  
@@ -60,14 +68,25 @@
 @media screen and (max-width: 600px) {
     .wrapper{
         padding: 32px 16px;
-    }
-    .partners{
-        flex-wrap: wrap;
-    }
-
-    .partners img{
-        max-height: 20px;
-        justify-content: space-between;
+        border-radius: 32px;
+        margin-top: 40px;
+        
     }
     
+   
+ 
+ 
+   
+    .text{
+        row-gap: 16px;
+        margin-bottom: 32px;
+    }
+    .title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .description{
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

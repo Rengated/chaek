@@ -43,10 +43,33 @@ const Collaboration: React.FC = () => {
           />
         ))}
         <div className={styles.collabs_want}>
-          <Image
-            src={plusIcon}
-            alt="plus"
-          />
+          <svg
+            width="32"
+            height="33"
+            viewBox="0 0 32 33"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              id="+"
+              d="M14.9548 32.6016C13.8502 32.6016 12.9548 31.7061 12.9548 30.6016V2.60156C12.9548 1.49699 13.8502 0.601562 14.9548 0.601562H17.0452C18.1498 0.601562 19.0452 1.49699 19.0452 2.60156V30.6016C19.0452 31.7061 18.1498 32.6016 17.0452 32.6016H14.9548ZM2 19.6468C0.895431 19.6468 0 18.7513 0 17.6468V15.5564C0 14.4518 0.895431 13.5564 2 13.5564H30C31.1046 13.5564 32 14.4518 32 15.5564V17.6468C32 18.7513 31.1046 19.6468 30 19.6468H2Z"
+              fill="url(#paint0_linear_1840_3651)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_1840_3651"
+                x1="16"
+                y1="-0.179306"
+                x2="16"
+                y2="32.6012"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#805399" />
+                <stop
+                  offset="1"
+                  stop-color="#65A30D"
+                />
+              </linearGradient>
+            </defs>
+          </svg>
+
           <span>Хочу коллаб</span>
         </div>
       </div>

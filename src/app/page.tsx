@@ -5,6 +5,7 @@ import OurFabric from "./components/OurFabric";
 import Team from "./components/Team";
 import Collaboration from "./components/Collaboration";
 import WhereBuy from "./components/WhereBuy";
+import { Unites } from "./components/Unites";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <OurFabric />
       <Team />
       <Collaboration />
-      {/* <WhereBuy /> */}
+      <WhereBuy />
+      <Unites />
     </main>
   );
 }

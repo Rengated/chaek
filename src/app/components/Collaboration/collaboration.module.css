@@ -78,7 +78,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .collabs_item{
@@ -119,38 +119,11 @@
 
 
 
-/* .collabs_item:nth-child(1)::after{
-    background-image: url('../../../../public/static/assets/collab-circle.png');
-}
-
-.collabs_item:nth-child(2)::after{
-    background-image: url('../../../../public/static/assets/collab-head.png');
-}
-
-.collabs_item:nth-child(3)::after{
-    background-image: url('../../../../public/static/assets/collab-wood.png');
-}
-
-.collabs_item:nth-child(4)::after{
-    background-image: url('../../../../public/static/assets/collab-circle.png');
-}
-
-.collabs_item:nth-child(5)::after{
-    background-image: url('../../../../public/static/assets/collab-head.png');
-}
-
-
 /* Hover */
 .collabs_item:hover::after{
     transform: scale(1.2);
 }
- /* .collabs_item:nth-child(1):hover::after, .collabs_item:nth-child(4):hover::after{
-    transform: scale(1.2);
-}
-
-.collabs_item:nth-child(2):hover::after, .collabs_item:nth-child(3):hover::after, .collabs_item:nth-child(5):hover::after{
-    background-image: url('../../../../public/static/assets/collab-circle.png');
-}   */
+ 
 
 .collabs_want{
     display: flex;
@@ -167,6 +140,16 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 28px; 
+    cursor: pointer;
+}
+
+ 
+.collabs_want:hover{
+    color: #4D7C0F;
+}
+
+.collabs_want:hover :first-child{
+    fill: #4D7C0F;
 }
 
 

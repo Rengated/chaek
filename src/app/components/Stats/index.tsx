@@ -8,6 +8,7 @@ import smile from "../../../../public/static/assets/smile.svg";
 import personLeft from "../../../../public/static/assets/person-left.png";
 import personRight from "../../../../public/static/assets/person-right.png";
 import Image from "next/image";
+import { position } from "@chakra-ui/react";
 
 const Stats: React.FC = () => {
   return (
@@ -73,28 +74,31 @@ const Stats: React.FC = () => {
             </p>
           </div>
           <div className={styles.collaboration}>
-            <p className={styles.collaboration_title}>Коллабы</p>
-            <Image
-              src={personLeft}
-              objectFit="contain"
-              alt=""
-              className={styles.collab_picture}
-            />
-            <Image
-              src={smile}
-              alt=""
-              className={styles.collab_picture}
-            />
-            <Image
-              src={personRight}
-              alt=""
-              className={styles.collab_picture}
-            />
+            <div className={styles.animation}>
+              <Image
+                src={personLeft}
+                objectFit="contain"
+                alt=""
+                className={styles.collab_picture}
+              />
+              <Image
+                src={smile}
+                alt=""
+                className={styles.collab_picture}
+              />
+              <Image
+                src={personRight}
+                alt=""
+                className={styles.collab_picture}
+              />
+            </div>
             <Image
               src={spot}
               alt=""
-              className={styles.collab_picture}
+              className={styles.collab_picture_spot}
             />
+
+            <p className={styles.collaboration_title}>Коллабы</p>
 
             <p className={styles.collaboration_subtitle}>
               С художником, гонщиком и основателем Щита. Чай объединяет!

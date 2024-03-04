@@ -11,3 +11,5 @@ declare module "*.frag" {
   const content: string;
   export default content;
 }
+
+/// <reference types="next-plugin-svgr/types/svg" />

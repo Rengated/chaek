@@ -1,0 +1,71 @@
+.wb_hover{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+}
+
+.wb{
+    position: relative;
+    z-index: 2;
+}
+
+
+ 
+.wb:hover{
+    opacity: 0;
+}
+
+.wb:hover+.wb_hover{
+    display: unset;
+    opacity: 1;
+}
+
+
+.ozon:hover{
+    fill: rgba(0, 91, 255, 1);
+}
+
+.azbuka:hover{
+    fill: rgba(99, 198, 52, 1);
+}
+
+.chaek > g :nth-child(2){
+    stroke: black;
+}
+.chaek:hover > g :nth-child(2){
+    fill: rgba(101, 163, 13, 1);
+}
+
+
+.ym:nth-child(4){
+    fill: none;
+
+}
+
+.ym :nth-child(5){
+    fill: #EAECE6;
+}
+.ym:hover :nth-child(4){
+    fill: yellow;
+
+}
+
+.ym:hover :nth-child(5){
+    fill: black;
+}
+
+@media screen and (max-width: 600px) {
+  .ozon, .chaek{
+        max-height: 20px;
+ 
+    }
+   .azbuka{
+    flex-grow: 10;
+   }
+
+    .wb{
+        height: 20px;
+        height: 100%;;
+    }
+}
