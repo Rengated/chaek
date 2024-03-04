@@ -150,6 +150,8 @@
     display: flex;
     padding: 32px;
     border-radius: 32px;
+    background-size: contain;
+    background-repeat: no-repeat
 }
 
 .name{
@@ -196,6 +198,10 @@
         padding-right: 15px;
     }
 
+    .text{
+        max-height: unset;
+    }
+
     .title{
         line-height: 72px;
         top: 16px;
@@ -217,6 +223,7 @@
     .slide{
         flex-basis: 256px;
         max-width: 256px;
+        height: 400px;
     }
     
     .slide_content{
@@ -225,5 +232,24 @@
     
     .arrows{
         display: none;
+    }
+
+    .team{
+        margin-bottom: 24px;
+    }
+
+    .position{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .position_desc{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .name{
+        font-size: 18px;
+        line-height: 20px;
     }
 }
