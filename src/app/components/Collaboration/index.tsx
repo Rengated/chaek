@@ -4,8 +4,8 @@ import { useState } from "react";
 import { Store } from "@/store";
 import Image from "next/image";
 import picture from "/public/static/assets/collab.png";
-import plusIcon from "../../../../public/static/assets/plus-icon.svg";
 import styles from "./collaboration.module.css";
+import Link from "next/link";
 
 const Collaboration: React.FC = () => {
   const { collaboration } = Store;
@@ -42,7 +42,11 @@ const Collaboration: React.FC = () => {
             style={{ backgroundImage: `url(${item.img})` }}
           />
         ))}
-        <div className={styles.collabs_want}>
+
+        <Link
+          href="https://chaekshop.ru/"
+          target="_blank"
+          className={styles.collabs_want}>
           <svg
             width="32"
             height="33"
@@ -71,7 +75,7 @@ const Collaboration: React.FC = () => {
           </svg>
 
           <span>Хочу коллаб</span>
-        </div>
+        </Link>
       </div>
     </section>
   );

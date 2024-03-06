@@ -1,31 +1,29 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { useRef, useCallback, useEffect } from "react";
+import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
+import { useEffect, useState } from "react";
+import { ShaderGradientCanvas, ShaderGradient } from "shadergradient";
+import { Store } from "@/store";
 import arrowLeft from "../../../../public/static/assets/icons/arrow-left.svg";
 import arrowRight from "../../../../public/static/assets/icons/arrow-right.svg";
 import Image from "next/image";
 import styles from "./team.module.css";
 import VanillaTilt from "vanilla-tilt";
-import { ShaderGradientCanvas, ShaderGradient } from "shadergradient";
 import * as reactSpring from "@react-spring/three";
 import * as drei from "@react-three/drei";
 import * as fiber from "@react-three/fiber";
-import { Store } from "@/store";
 
 const Team: React.FC = () => {
-  const sliderRef = useRef(null);
+  const [swiper, setSwiper] = useState<SwiperClass | null>(null);
+
+  const nextSlide = () => {
+    (swiper as unknown as SwiperClass).slideNext();
+  };
+
+  const prevSlide = () => {
+    (swiper as unknown as SwiperClass).slidePrev();
+  };
   const { team } = Store;
-
-  const handlePrev = useCallback(() => {
-    if (!sliderRef.current) return;
-    (sliderRef.current as any).swiper.slidePrev();
-  }, []);
-
-  const handleNext = useCallback(() => {
-    if (!sliderRef.current) return;
-    (sliderRef.current as any).swiper.slideNext();
-  }, []);
 
   useEffect(() => {
     VanillaTilt.init(
@@ -60,7 +58,7 @@ const Team: React.FC = () => {
         <div className={styles.arrows}>
           <button
             className={styles.button}
-            onClick={handlePrev}>
+            onClick={prevSlide}>
             <Image
               src={arrowLeft}
               alt="arrow left"
@@ -68,7 +66,7 @@ const Team: React.FC = () => {
           </button>
           <button
             className={styles.button}
-            onClick={handleNext}>
+            onClick={nextSlide}>
             <Image
               src={arrowRight}
               alt="arrow  right"
@@ -79,14 +77,13 @@ const Team: React.FC = () => {
 
       <div className={styles.team}>
         <Swiper
-          ref={sliderRef}
-          slidesPerView={4.25}
+          onSwiper={(swiper: SwiperClass) => {
+            setSwiper(swiper);
+          }}
+          slidesPerView={"auto"}
           loop={true}
-          spaceBetween={16}
-          mousewheel={{
-            releaseOnEdges: true,
-          }}>
-          {team.map((person, index) => (
+          spaceBetween={16}>
+          {[...team, ...team, ...team].map((person, index) => (
             <SwiperSlide
               key={index}
               className={styles.slide}>

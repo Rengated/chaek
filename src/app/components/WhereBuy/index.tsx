@@ -1,5 +1,6 @@
 import styles from "./wherebuy.module.css";
 import { Azbuka, Ozon, Wb, Ym, Chaek } from "../Icons/Icons";
+import Link from "next/link";
 
 const WhereBuy: React.FC = () => {
   return (
@@ -11,11 +12,31 @@ const WhereBuy: React.FC = () => {
         <p className={styles.description}>Описание</p>
       </div>
       <div className={styles.partners}>
-        <Chaek />
-        <Ozon />
-        <Azbuka />
-        <Wb />
-        <Ym />
+        <Link
+          href="https://chaekshop.ru/"
+          target="_blank">
+          <Chaek />
+        </Link>
+        <Link
+          href="https://chaekshop.ru/"
+          target="_blank">
+          <Ozon />
+        </Link>
+        <Link
+          href="https://chaekshop.ru/"
+          target="_blank">
+          <Azbuka />
+        </Link>
+        <Link
+          href="https://chaekshop.ru/"
+          target="_blank">
+          <Wb />
+        </Link>
+        <Link
+          href="https://chaekshop.ru/"
+          target="_blank">
+          <Ym />
+        </Link>
       </div>
     </section>
   );
