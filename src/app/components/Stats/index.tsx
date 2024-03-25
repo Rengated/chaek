@@ -8,7 +8,6 @@ import smile from "../../../../public/static/assets/smile.svg";
 import personLeft from "../../../../public/static/assets/person-left.png";
 import personRight from "../../../../public/static/assets/person-right.png";
 import Image from "next/image";
-import { position } from "@chakra-ui/react";
 
 const Stats: React.FC = () => {
   return (

@@ -43,6 +43,10 @@ const History: React.FC = () => {
               key={index}>
               <Image
                 src={example}
+                style={{
+                  width: "50%",
+                  height: "auto",
+                }}
                 alt="slider image"
               />
               <div className={styles.textbox}>

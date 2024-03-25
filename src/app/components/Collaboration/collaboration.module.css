@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 80px;
+    padding: 0px 15px;
     padding-bottom: 120px;
     row-gap: 56px;
 }
@@ -86,6 +87,8 @@
     overflow: hidden;
     min-width: 192px;
     border: 4px solid;
+    border-color: transparent;
+    background-repeat: no-repeat;
     max-width: 192px;
     width: 100%;
     aspect-ratio: 1/1;
@@ -118,6 +121,10 @@
     transition: 0.3s;
 }
 
+.image{
+    display: flex;
+    flex-basis: 500px;
+}
 
 
 /* Hover */
@@ -155,7 +162,17 @@
 }
 
 
+.content img{
+    width: 100%;
+    
+ 
+   height: auto;
+
+}
 @media screen and (max-width: 600px) {
+    .image{
+        flex-basis:  unset;
+    }
     .wrapper{
         row-gap: 32px;
         padding-bottom: 20px;

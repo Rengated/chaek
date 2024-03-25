@@ -10,8 +10,11 @@ import Link from "next/link";
 const Collaboration: React.FC = () => {
   const { collaboration } = Store;
   const [activeCollaboration, setActiveCollaboration] = useState(0);
+  const [clicked, setClicked] = useState(false);
 
-  const onCollabClick = (collab: number) => setActiveCollaboration(collab);
+  const onCollabClick = (collab: number) => {
+    setActiveCollaboration(collab), setClicked(true);
+  };
 
   return (
     <section className={styles.wrapper}>
@@ -26,17 +29,21 @@ const Collaboration: React.FC = () => {
           </p>
           <button className={styles.button}>Подробнее</button>
         </div>
-        <Image
-          src={picture}
-          alt="collab picture"
-        />
+        <div className={styles.image}>
+          <Image
+            src={picture}
+            alt="collab picture"
+          />
+        </div>
       </div>
       <div className={styles.collabs}>
         {collaboration.map((item, index) => (
           <div
             key={index}
             className={`${styles.collabs_item} ${
-              index == activeCollaboration ? styles.collab_item_active : ""
+              index == activeCollaboration && clicked
+                ? styles.collab_item_active
+                : ""
             } `}
             onClick={() => onCollabClick(index)}
             style={{ backgroundImage: `url(${item.img})` }}

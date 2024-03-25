@@ -35,6 +35,7 @@
 }
 .chaek:hover > g :nth-child(2){
     fill: rgba(101, 163, 13, 1);
+    stroke: none;
 }
 
 
